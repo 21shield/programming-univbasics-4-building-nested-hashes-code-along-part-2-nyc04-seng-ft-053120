@@ -60,17 +60,20 @@ def add_characters
    #   - The first hash should have the :name key set to "Prince Escalus"
    #   - The second hash should have the :name key set to "Apothecary"
    # Code your solution here:
-
-epic_tragedy[:montague] = {:additional_characters => [{:name => "Prince Escalus"}, {:name => "Apothecary"}]}
-epic_tragedy[:capulet] = {:additional_characters => [{:name => "Prince Escalus"}, {:name => "Apothecary"}]}
+#
+# epic_tragedy[:montague] = {:additional_characters => [{:name => "Prince Escalus"}, {:name => "Apothecary"}]}
+# epic_tragedy[:capulet] = {:additional_characters => [{:name => "Prince Escalus"}, {:name => "Apothecary"}]}
 
 # The method above instead of creating new hash erases the hashses and assigns it to a new meaning or what ever it is currently written
 # although this passes the test specs it does not complete what is was meant to do
 
-# epic_tragedy[:montague][:additional_characters] = []
-# epic_tragedy[:montague][:additional_characters] << {:name => "Apthecary"}
-# epic_tragedy[:montague][:additional_characters] << {:name => "Prince Escalus"}
+epic_tragedy[:additional_characters] = []
+epic_tragedy[:additional_characters] << {:name => "Prince Escalus"}
+epic_tragedy[:additional_characters] << {:name => "Apothecary"}
+
 # epic_tragedy[:capulet] [:additional_characters] = []
-# epic_tragedy[:capulet][:additional_characters] << {:name => "Apthecary"}
+#
 # epic_tragedy[:capulet][:additional_characters] << {:name => "Prince Escalus"}
+# epic_tragedy[:capulet][:additional_characters] << {:name => "Apothecary"}
+epic_tragedy
 end
